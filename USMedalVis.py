@@ -20,8 +20,7 @@ print(usa_medals_by_year)
 
 
 # Plot the DataFrame usa_medals_by_year
-usa_medals_by_year.plot()
+plt.style.use('ggplot')
 usa_medals_by_year.plot.area()
-
 
 plt.show()
