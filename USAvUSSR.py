@@ -11,7 +11,7 @@ is_usa_urs = medals.Country.isin(['USA', 'URS'])
 # Use during_cold_war and is_usa_urs to create the DataFrame: cold_war_medals
 cold_war_medals = medals.loc[during_cold_war & is_usa_urs]
 
-# Group cold_war_medals by 'NOC'
+# Group cold_war_medals by 'Country'
 country_grouped = cold_war_medals.groupby('Country')
 
 # Create Nsports
